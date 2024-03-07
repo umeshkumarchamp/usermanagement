@@ -21,9 +21,9 @@ public class HibernateConfig {
 			StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
 					.applySetting(AvailableSettings.DIALECT, "org.hibernate.dialect.MySQLDialect")
 					.applySetting(AvailableSettings.DRIVER, "com.mysql.cj.jdbc.Driver")
-					.applySetting(AvailableSettings.URL, "jdbc:mysql://localhost:3000/hibernate")
+					.applySetting(AvailableSettings.URL, "jdbc:mysql://localhost:3306/hibernate")
 					.applySetting(AvailableSettings.USER, "root")
-					.applySetting(AvailableSettings.PASS, "India@143")
+					.applySetting(AvailableSettings.PASS, "root")
 					.applySetting(AvailableSettings.HBM2DDL_AUTO, "update") // or "update"
 					.applySetting(AvailableSettings.SHOW_SQL, "true").build();
 
